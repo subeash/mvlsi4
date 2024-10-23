@@ -2,14 +2,26 @@
 
 <img src="images/peq.jpg"  />
   
-**Fig. 1. Gradual channel approximation**
+**Fig. 1. silicon stack up for P-channel and N-channel JFETs**
 
   
+**Steps to perform the real measurement in HP 4145B / Agilent 4156C Semiconductor Parameter Analyzer**  
 
-**Steps to perform the real measurement in HP 4145B Semiconductor Parameter Analyzer**  
+1.  Set up the Agilent 4156C Precision Semiconductor Parameter Analyzer and connect it to the computer with the required software interface.
+2.  Mount the P-channel JFET on the probe station and carefully position the probes on the source, drain, and gate terminals of the JFET.
+3.  Connect the source, drain, and gate terminals to the Agilent 4156C using appropriate connections.
+4.  Configure the Agilent 4156C:
+    *   Set the source-drain voltage (VDS) sweep range (e.g., -10V to 0V).
+    *   Set the reverse bias voltage at the gate-source (VGS) from 0V to a suitable negative value (e.g., 0V to -5V).
+    *   Define the measurement points and ensure the correct sweep rate and compliance settings.
+5.  Turn on the Agilent 4156C and perform the first measurement sweep with VGS set at 0V, recording the IDS (Drain Current) and VDS (Drain-Source Voltage).
+6.  Gradually increase the reverse bias (negative VGS) in small increments (e.g., -1V, -2V, up to -5V) and record the corresponding IDS and VDS for each step.
+7.  Observe and document how increasing reverse bias voltage affects the drain current (IDS).
+8.  Repeat the measurement as necessary for multiple samples to ensure consistency in the results.
+9.  Analyze the collected data to determine the impact of reverse biasing on the P-channel JFET’s performance.
+10.  Turn off the Agilent 4156C and disconnect the setup carefully.
 
-In this simulation, the bulk of the semiconductor is grounded and V is the voltage on the metal gate, $$t_{ox}$$ is the thickness of the oxide, $$E_g$$ is the band gap which can be temperature dependent, $$ϵ_{ox}$$ is the relative dielectric constant of the oxide, $$ϵ_s$$ is the relative dielectric constant of the semiconductor, $$E_s$$ is the electric field at the semiconductor-oxide interface, Q is the charge on the charge on the semiconductor, $$ϕ_m$$ is the work function of the metal, $$χ_s$$ is the electron affinity of the semiconductor, $$V_s$$ is the voltage at the semiconductor-oxide interface, T is the absolute temperature, $$N_A$$ is the concentration of acceptors, $$N_c(300)$$ is the effective density of states in the conduction band at 300 K, and $$N_v(300)$$ is the effective density of states in the valence band at 300 K. Note that in the band diagram, the band gap of the oxide is drawn 2 eV larger than the band gap of the semiconductor. In reality, the band gap of the oxide would be much larger but it is easier to see the band bending when the diagram is plotted with a small band gap for the gate oxide.
+Conclusion:
+-----------
 
-The - and + buttons change the gate voltage by ±0.01±0.01\\pm 0.01 V.
-
-When the metal and the semicondutor are electrically connected, electrons flow from the material with a low work function to the material with a high work function. This current flow stops when a built-in voltage is established that is equal to the work function difference, $$Vbi\=ϕm−ϕsVbi\=ϕm−ϕsV\_{bi}=\\phi\_m-\\phi\_s$$. The work function of a semiconductor depends on the electron affinity χsχs\\chi\_s and the doping, $$ϕs\=χs+Ec−EFϕs\=χs+Ec−EF\\phi\_s=\\chi\_s+E\_c-E\_F$$.
+Summarize the observed effects of reverse bias on the P-channel JFET, specifically noting changes in drain current and voltage characteristics with increasing reverse bias.

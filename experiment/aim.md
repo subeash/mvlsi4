@@ -1,2 +1,2 @@
 ## Aim of experiment
-To analyze energy band diagrams and surface potential of a Metal-Oxide-Semiconductor (MOS) capacitor
+To investigate the behavior of a P-channel JFET (Junction Field Effect Transistor) under reverse bias conditions, analyze the impact of reverse bias on the gate-source junction, and measure its effect on the drain current and voltage characteristics.
